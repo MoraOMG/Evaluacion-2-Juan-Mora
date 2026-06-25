@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reserva de Viajes</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+    <main class="contenedor">
+        <section class="card">
+            <h1>Reserva de Viajes</h1>
+            <p class="descripcion">Complete el siguiente formulario.</p>
+            <hr>
+            <div class="usuario"><strong>Bienvenido(a): </strong><span id="nombreUsuario">Nombre del usuario</span>
+            </div>
+            <hr>
+            <form id="formulario">
+                <label for="nombre">Nombre del pasajero</label>
+                <input type="text" id="nombre">
+                <label for="destino">Destino</label>
+                <input type="text" id="destino">
+                <label for="fecha">Fecha de viaje</label>
+                <input type="date" id="fecha">
+                <label for="pasajeros">Cantidad de pasajeros</label>
+                <input type="number" id="pasajeros">
+                <label for="hospedaje">Tipo de hospedaje</label>
+                <select id="hospedaje">
+                    <option value="">Seleccione...</option>
+                    <option>Hotel</option>
+                    <option>Hostal</option>
+                    <option>Cabaña</option>
+                </select>
+                <div id="errores"></div><button type="button">
+                    Guardar
+                </button>
+
+            </form>
+        </section>
+    </main>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>
